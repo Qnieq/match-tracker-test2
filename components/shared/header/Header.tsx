@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Alert, Animated, Image, TouchableOpacity, TouchableWithoutFeedback, View, useWindowDimensions } from "react-native";
-import { useMatchesStore } from "store/useMatchesStore";
+import { Animated, Image, TouchableOpacity, TouchableWithoutFeedback, View, useWindowDimensions } from "react-native";
+import { useMatchesStore } from "../../../store/useMatchesStore";
 
 import Loader from "../../ui/Loader";
-import { StyledText } from "components/ui/StyledText";
+import { StyledText } from "../../../components/ui/StyledText";
 import Svg, { Path } from "react-native-svg";
 import { toast } from "sonner-native";
 
@@ -66,7 +66,7 @@ const Header = () => {
                 }}
             >
                 <Image
-                    source={require("assets/images/logo.png")}
+                    source={require("../../../assets/images/logo.png")}
                     style={{ width: 256, height: 23 }}
                     resizeMode="contain"
                 />

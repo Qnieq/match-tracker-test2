@@ -1,4 +1,4 @@
-import { StyledText } from "components/ui/StyledText";
+import { StyledText } from "../../../components/ui/StyledText";
 import { useEffect, useRef, useState } from "react";
 import { Animated } from "react-native";
 

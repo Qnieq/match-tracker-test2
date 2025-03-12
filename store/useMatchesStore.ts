@@ -1,5 +1,5 @@
-import { fetchMatchesAPI } from "components/shared/api/matchApi";
-import { Match } from "types/match.types";
+import { fetchMatchesAPI } from "../components/shared/api/matchApi";
+import { Match } from "../types/match.types";
 import { create } from "zustand";
 
 interface MatchStore {

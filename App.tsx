@@ -1,6 +1,6 @@
 import "./global.css";
-import MatchTracker from "components/features/match-tracker/MatchTracker";
-import Header from "components/shared/header/Header";
+import MatchTracker from "./components/features/match-tracker/MatchTracker";
+import Header from "./components/shared/header/Header";
 import { useFonts } from "expo-font";
 import { View, useWindowDimensions, StyleSheet } from "react-native";
 import { Toaster } from "sonner-native";
@@ -12,7 +12,7 @@ export default function App() {
   const isMobile = width <= 545;
 
   const [fontsLoaded] = useFonts({
-    'Inter': require('assets/fonts/Inter-VariableFont.ttf'),
+    'Inter': require('./assets/fonts/Inter-VariableFont.ttf'),
   });
 
   if (!fontsLoaded) {

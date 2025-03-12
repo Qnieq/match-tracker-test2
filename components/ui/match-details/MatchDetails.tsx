@@ -1,5 +1,5 @@
 import { Image, useWindowDimensions, View } from "react-native";
-import { useMatchesStore } from "store/useMatchesStore";
+import { useMatchesStore } from "../../../store/useMatchesStore";
 import { StyledText } from "../StyledText";
 import { clamp } from 'react-native-reanimated';
 import { Fragment, useMemo } from "react";
@@ -46,7 +46,7 @@ const MatchDetails = () => {
                                 >
                                     <View className="flex-row items-center gap-2">
                                         <Image
-                                            source={require("assets/icons/player.png")}
+                                            source={require("../../../assets/icons/player.png")}
                                             style={{
                                                 width: clamp(width * 0.02, 32, 36),
                                                 height: clamp(width * 0.02, 32, 36)

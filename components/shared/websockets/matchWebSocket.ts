@@ -1,4 +1,4 @@
-import { useMatchesStore } from "store/useMatchesStore";
+import { useMatchesStore } from "../../../store/useMatchesStore";
 
 export const matchWebSocket = (): WebSocket => {
   const ws = new WebSocket("wss://app.ftoyd.com/fronttemp-service/ws");

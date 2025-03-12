@@ -1,14 +1,13 @@
 import React, { memo, useCallback, useMemo } from "react";
 import { View, Image, TouchableWithoutFeedback, useWindowDimensions } from "react-native";
-import { Match } from "types/match.types";
+import { Match } from "../../../types/match.types";
 
 import CardStatus from "../../ui/card-status/CardStatus";
-import { StyledText } from "components/ui/StyledText";
-import Svg, { Path } from "react-native-svg";
-import { useMatchesStore } from "store/useMatchesStore";
-import MatchDetails from "components/ui/match-details/MatchDetails";
+import { StyledText } from "../../../components/ui/StyledText";
+import { useMatchesStore } from "../../../store/useMatchesStore";
+import MatchDetails from "../../../components/ui/match-details/MatchDetails";
 import { clamp } from "react-native-reanimated";
-import DetailsArrow from "components/ui/DetailsArrow";
+import DetailsArrow from "../../../components/ui/DetailsArrow";
 import ScoreAnimated from "../score-animated/ScoreAnimated";
 
 interface MatchItemProps {
@@ -34,7 +33,7 @@ const MatchItem: React.FC<MatchItemProps> = memo(({ match }) => {
         <View className="flex-row justify-between w-full">
           <View className="flex-row items-center justify-center space-x-2">
             <Image
-              source={require("assets/icons/team.png")}
+              source={require("../../../assets/icons/team.png")}
               style={{
                 width: clamp(width * 0.02, 28, 36),
                 height: clamp(width * 0.02, 28, 36)
@@ -63,7 +62,7 @@ const MatchItem: React.FC<MatchItemProps> = memo(({ match }) => {
               {match.homeTeam.name}
             </StyledText>
             <Image
-              source={require("assets/icons/team.png")}
+              source={require("../../../assets/icons/team.png")}
               style={{
                 width: clamp(width * 0.02, 28, 36),
                 height: clamp(width * 0.02, 28, 36)

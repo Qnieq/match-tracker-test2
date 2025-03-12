@@ -1,7 +1,7 @@
 import axios from 'axios';
 import axiosRetry from 'axios-retry';
 import type { AxiosError } from 'axios';
-import { Match } from 'types/match.types';
+import { Match } from '../../../types/match.types';
 
 const apiClient = axios.create({
     baseURL: 'https://app.ftoyd.com/fronttemp-service',
