@@ -67,7 +67,7 @@ const Header = () => {
             >
                 <Image
                     source={require("assets/images/logo.png")}
-                    className="w-[258px] h-[23px]"
+                    style={{ width: 256, height: 23 }}
                     resizeMode="contain"
                 />
                 <TouchableWithoutFeedback onPress={() => setFilterMenuOpen((prev) => !prev)}>
