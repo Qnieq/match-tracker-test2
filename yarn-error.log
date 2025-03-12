@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\fleyg\AppData\Local\node\corepack\v1\yarn\1.22.19\bin\yarn.js add @expo/webpack-config@^18 --force
+  C:\Program Files\nodejs\node.exe C:\Users\fleyg\AppData\Local\node\corepack\v1\yarn\1.22.19\bin\yarn.js add @expo/webpack-config
 
 PATH: 
   C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Python39\Scripts\;C:\Program Files\Python39\;C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Windows\system32\wbem;C:\Program Files (x86)\IVT Corporation\BlueSoleil\Mobile;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\fleyg\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\fleyg\AppData\Local\Programs\Python\Python310\;C:\Users\fleyg\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\fleyg\AppData\Local\GitHubDesktop\bin;C:\Users\fleyg\AppData\Roaming\npm;;c:\Users\fleyg\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand
@@ -27,15 +27,18 @@ npm manifest:
       "prebuild": "expo prebuild",
       "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" && prettier -c \"**/*.{js,jsx,ts,tsx,json}\"",
       "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
-      "web": "expo start --web"
+      "web": "expo start --web",
+      "build:web": "expo export:web"
     },
     "dependencies": {
       "@expo/metro-runtime": "~4.0.1",
+      "@expo/webpack-config": "^19.0.1",
       "axios": "^1.8.2",
       "axios-retry": "^4.5.0",
       "expo-dev-client": "~5.0.13",
       "expo-font": "~13.0.4",
       "expo-status-bar": "~2.0.1",
+      "expo-updates": "~0.27.3",
       "nativewind": "latest",
       "react": "18.3.1",
       "react-dom": "18",
@@ -50,9 +53,7 @@ npm manifest:
       "react-native-z-view": "^0.2.4",
       "sonner": "^2.0.1",
       "sonner-native": "^0.17.0",
-      "zustand": "^5.0.3",
-      "expo-updates": "~0.27.3",
-      "@expo/webpack-config": "18"
+      "zustand": "^5.0.3"
     },
     "devDependencies": {
       "@babel/core": "^7.20.0",

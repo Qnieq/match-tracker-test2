@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cf890fdb.css",
-    "main.js": "/static/js/main.b5b37942.js",
+    "main.css": "/static/css/main.04667027.css",
+    "main.js": "/static/js/main.e24b5040.js",
     "static/js/387.a06fd80b.js": "/static/js/387.a06fd80b.js",
     "static/media/Inter-VariableFont.ttf": "/static/media/Inter-VariableFont.e05c5f3d1fa6a3893d84.ttf",
     "static/media/team.png": "/static/media/team.24e56de970b47fe6702a.png",
@@ -10,13 +10,13 @@
     "index.html": "/index.html",
     "manifest.json": "/manifest.json",
     "serve.json": "/serve.json",
-    "main.cf890fdb.css.map": "/static/css/main.cf890fdb.css.map",
-    "main.b5b37942.js.map": "/static/js/main.b5b37942.js.map",
+    "main.04667027.css.map": "/static/css/main.04667027.css.map",
+    "main.e24b5040.js.map": "/static/js/main.e24b5040.js.map",
     "387.a06fd80b.js.map": "/static/js/387.a06fd80b.js.map"
   },
   "entrypoints": [
     "static/js/387.a06fd80b.js",
-    "static/css/main.cf890fdb.css",
-    "static/js/main.b5b37942.js"
+    "static/css/main.04667027.css",
+    "static/js/main.e24b5040.js"
   ]
 }
